@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/translations.js"></script>
 </head>
 <body>
 
@@ -15,7 +17,7 @@
             <div class="dropdown">
                 <button class="dropbtn"></button>
                 <div class="dropdown-content">
-                    <a href="#" data-language="ru">Українська</a>
+                    <a href="#" data-language="ua">Українська</a>
                     <a href="#" data-language="en">English</a>
                     <a href="#" data-language="pl">Polski</a>
                 </div>
@@ -23,8 +25,8 @@
 
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="/about.html" data-translate="about">About</a></li>
-                    <li><a href="/contact.html" data-translate="contact">Contact</a></li>
+                    <li><a href="about.html" data-translate="about">About</a></li>
+                    <li><a href="contact.html" data-translate="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,12 +41,12 @@
                 </p>
             </div>
             <div class="image">
-                <a href="/boxster.html"><img src="res/img/boxster.png" alt="Boxster"></a>
+                <a href="boxster.html"><img src="res/img/boxster.png" alt="Boxster"></a>
             </div>
         </div>
         <div class="menu-item">
             <div class="image">
-                <img src="res/img/carrera.png" alt="Carrera">
+                <a href="carrera.html"><img src="res/img/carrera.png" alt="Carrera"></a>
             </div>
             <div class="text">
                 <h2 data-translate="carrera.title">Porsche Carrera</h2>
@@ -61,12 +63,12 @@
                 </p>
             </div>
             <div class="image">
-                <img src="res/img/macan.png" alt="Macan">
+                <a href="macan.html"><img src="res/img/macan.png" alt="Macan"></a>
             </div>
         </div>
         <div class="menu-item">
             <div class="image">
-                <img src="res/img/panamera.png" alt="Panamera">
+                <a href="panamera.html"><img src="res/img/panamera.png" alt="Panamera"></a>
             </div>
             <div class="text">
                 <h2 data-translate="panamera.title">Porsche Panamera</h2>
@@ -84,7 +86,7 @@
                     </p>
                     </div>
                 <div class="image">
-                    <img src="res/img/cayman.png" alt="Cayman">
+                    <a href="cayman.html"><img src="res/img/cayman.png" alt="Cayman"></a>
                 </div>
             </div>
         </div>
@@ -94,7 +96,16 @@
         <p data-translate="footer">All rights reserved. 2023 - 2024</p>
     </div>
 
-    <script src="scripts/script.js"></script>
-    <script src="scripts/translations.js"></script>
+    <script>
+        // Set the selected language from URL parameter on page load
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedLanguage = urlParams.get('lang');
+
+            if (selectedLanguage) {
+                translatePage(selectedLanguage);
+            }
+        });
+    </script>
 </body>
 </html>
