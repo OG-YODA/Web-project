@@ -22,7 +22,11 @@ const translations = {
         "contactButton": "Надіслати",
         "textEnter": "Напишіть нам повідомлення",
         "surname": "Прізвище",
-        "name": "Ім'я"
+        "name": "Ім'я",
+        "adOrder": "Замовити рекламу",
+        "contactUs": "Зв'яжіться з нами для замовлення реклами.",
+        "phoneNumber": "Номер телефону (PL): +48 (123) 123-123",
+        "or": "Або через електронний лист:"
     },
 
     "en": {
@@ -47,7 +51,11 @@ const translations = {
         "contactButton": "Submit",
         "textEnter": "Enter your message",
         "surname": "Last name",
-        "name": "First name"
+        "name": "First name",
+        "adOrder": "Order advertising",
+        "contactUs": "Contact us to order advertising.",
+        "phoneNumber": "Phone number (PL): +48 (123) 123-123",
+        "or": "Or via email:"
     },
 
     "pl":{
@@ -72,6 +80,10 @@ const translations = {
         "contactButton": "Prześlij",
         "textEnter": "Wpisz swoją wiadomość",
         "surname": "Nazwisko",
-        "name": "Imie"
+        "name": "Imie",
+        "adOrder": "Zamów reklamę",
+        "contactUs": "Skontaktuj się z nami, aby zamówić reklamę.",
+        "phoneNumber": "Numer telefonu (PL): +48 (123) 123-123",
+        "or": "Lub przez e-mail:"
     }
 };
