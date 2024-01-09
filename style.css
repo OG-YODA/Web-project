@@ -77,14 +77,14 @@ header {
 
 .menu-item {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 1%;
     border: 1px solid #ccc;
     overflow: hidden;
     display: flex;
 }
 
 .text {
-    flex: 1;
+    flex: 2;
     font-size:large;
     margin: 1%;
     margin-left: 8%;
@@ -96,7 +96,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 300px;
+    max-height: 400px;
 }
 
 img {
