@@ -161,7 +161,7 @@ img {
 
 .textExtended{
     width: 100%;
-    max-width: 600px; /* Adjust the max-width as needed */
+    max-width: 600px;
     min-width: 200px;
     margin: 20px 0;
     font-size: large;
@@ -180,7 +180,7 @@ img {
     width: 100%;
     height: auto;
     display: block;
-    transition: transform 0.3s ease; /* Добавьте плавный переход для анимации перелистывания */
+    transition: transform 0.3s ease;
 }
 
 .arrow {
