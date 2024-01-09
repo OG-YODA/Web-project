@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Macan</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/translations.js"></script>
+    <script src="scripts/macanCarousel.js"></script>
 </head>
 <body>
 
@@ -21,22 +24,33 @@
                 </div>
             </div>
 
+            <div class="logo">PORSCHE</div>
+
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html" data-translate="main">Main page</a></li>
-                    <li><a href="about.html" data-translate="about">About</a></li>
                     <li><a href="contact.html" data-translate="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-
+    <div class="car-container">
+        <h2 data-translate="macan.title">Porsche Macan</h2>
+        <div class="carousel">
+            <img id="current-image" alt="Car Image">
+            <div class="arrow left" onclick="changeImage(-1)">&#9664;</div>
+            <div class="arrow right" onclick="changeImage(1)">&#9654;</div>
+        </div>
+        <div class="text">
+            <p data-translate="macan.extended.description">
+                Produced since 2013, the Porsche Macan is a compact SUV (segment I; premium group). It is the German brand's second car in this segment, taking its place alongside the larger Cayenne model. It was even first intended to be called the Cajun, which was short for "Cayenne Junior." However, Porsche chose the name Macan, which means "tiger" in Indonesian. The car has been under development since 2010. Technically, the Porsche Macan is closely related to the Audi Q5 - both cars are built on the Volkswagen Group MLB floor platform. The Macan is also the first car in the Porsche lineup offered only with a seven-speed PDK automatic transmission.    
+            </p>
+        </div>
+    </div>
 
     <div class="footer">
-        <p data-translate="footer">All rights reserved. 2023 - 2024</p>
+        <p data-translate="footer">All rights reserved. All images are licensed under a Creative Commons license. 2023 - 2024</p>
     </div>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/translations.js"></script>
 </body>
 </html>

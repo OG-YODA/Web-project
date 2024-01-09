@@ -1,4 +1,3 @@
-<!--index.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/translations.js"></script>
+    <script src="scripts/form.js"></script>
 </head>
 <body>
 
@@ -21,21 +23,45 @@
                 </div>
             </div>
 
+            <div class="logo">PORSCHE</div>
+
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="about.html" data-translate="about">About</a></li>
                     <li><a href="index.html" data-translate="main">Main page</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <div class="container">
+        <h2>To order an advertisement</h2>
+        <p>Contact us for advertising orders.</p>
     
+        <div class="contact-info">
+          <p>Phone number (PL): +48 (123) 123-123</p>
+        </div>
+    
+        <form id="contactForm" onsubmit="submitForm(event)">
+          <label for="firstName" data-translate="name">Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+    
+          <label for="lastName" data-translate="surname">Surname:</label>
+          <input type="text" id="lastName" name="lastName" required>
+    
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message" data-translate="textEnter">Enter yor text:</label>
+          <textarea id="message" name="message" required></textarea>
+    
+          <button id="sendMailButton" type="submit" data-translate="contactButton">Contact</button>
+        </form>
+    
+        <div id="confirmationMessage"></div>
+      </div>
 
     <div class="footer">
-        <p data-translate="footer">All rights reserved. 2023 - 2024</p>
+        <p data-translate="footer">All rights reserved. All images are licensed under a Creative Commons license. 2023 - 2024</p>
     </div>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/translations.js"></script>
 </body>
 </html>

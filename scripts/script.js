@@ -4,6 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const languageDropdown = document.querySelector('.dropdown');
     const menuItems = document.querySelectorAll('.menu-item');
 
+    function setLanguageAndURL(selectedLanguage) {
+        translatePage(selectedLanguage);
+
+        localStorage.setItem('selectedLanguage', selectedLanguage);
+    }
+
     languageDropdown.addEventListener('click', function () {
         this.classList.toggle('active');
     });
@@ -12,13 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function (event) {
             event.preventDefault();
             const selectedLanguage = this.getAttribute('data-language');
-            
-            // Save selected language to URL parameter
-            const url = new URL(window.location.href);
-            url.searchParams.set('lang', selectedLanguage);
-            window.history.pushState({}, '', url);
 
-            translatePage(selectedLanguage);
+            setLanguageAndURL(selectedLanguage);
+
             languageDropdown.classList.remove('active');
         });
     });
@@ -35,4 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
+
+    const storedLanguage = localStorage.getItem('selectedLanguage');
+    const selectedLanguage = storedLanguage || 'en'; //default language
+    setLanguageAndURL(selectedLanguage);
 });

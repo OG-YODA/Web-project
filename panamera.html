@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panamera</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/translations.js"></script>
+    <script src="scripts/panameraCarousel.js"></script>
 </head>
 <body>
 
@@ -21,22 +24,33 @@
                 </div>
             </div>
 
+            <div class="logo">PORSCHE</div>
+
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html" data-translate="main">Main page</a></li>
-                    <li><a href="about.html" data-translate="about">About</a></li>
                     <li><a href="contact.html" data-translate="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-
+    <div class="car-container">
+        <h2 data-translate="panamera.title">Porsche Panamera</h2>
+        <div class="carousel">
+            <img id="current-image" alt="Car Image">
+            <div class="arrow left" onclick="changeImage(-1)">&#9664;</div>
+            <div class="arrow right" onclick="changeImage(1)">&#9654;</div>
+        </div>
+        <div class="text">
+            <p data-translate="panamera.extended.description">
+                Produced since 2010, a luxury F-segment car, the flagship model of the German brand. Porsche Panamera became the first limousine in Porsche's history, the production of which was decided in view of the increasing demand for so-called 4-door coupes. The car was based on a prototype from the late 1980s, called the Porsche 989 (previously also the Porsche 928). The second-generation Panamera was launched in 2016, and is also offered in an estate version (for the first time in the German manufacturer's history). The name Panamera (as well as Carrera) refers to the Carrera Panamericana racing. To date, more than 160,000 copies of the Porsche Panamera have found buyers.
+            </p>
+        </div>
+    </div>
 
     <div class="footer">
-        <p data-translate="footer">All rights reserved. 2023 - 2024</p>
+        <p data-translate="footer">All rights reserved. All images are licensed under a Creative Commons license. 2023 - 2024</p>
     </div>
-    <script src="scripts/script.js"></script>
-    <script src="scripts/translations.js"></script>
 </body>
 </html>

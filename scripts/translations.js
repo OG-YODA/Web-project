@@ -1,7 +1,6 @@
 //translations.js
 const translations = {
     "ua": {
-        "about": "Про нас",
         "contact": "Контакт",
         "main": "Головна",
         "boxster.title": "Porsche Boxster",
@@ -19,11 +18,14 @@ const translations = {
         "cayman.title": "Porsche Cayman",
         "cayman.description": "Неповторний Porsche Cayman - втілення пристрасті до водіння та неймовірного дизайну. Цей спортивний купе втілює в собі пишність інновацій і технологій від Porsche, забезпечуючи максимальне задоволення від кожного кілометра. Потужний мотор, точне керування та вишуканий інтер'єр підкреслюють статус власника. Відчуйте справжнє водійське задоволення з Cayman - гармонія стилю та продуктивності, створена для справжніх поціновувачів автомобілів.",
         "cayman.extended.description": "Випускається з 2005 року, двомісний спортивний автомобіль з кузовом купе (сегмент G). У каталозі німецького бренду Porsche Cayman прийшов на зміну моделі 968, будучи при цьому тісно пов'язаним з моделлю Boxster, дводверною версією якої він і є. З іншого боку, стилістично автомобіль відсилає до класики Porsche - моделей 550 Coupe і 904 Coupe. Porsche Cayman був дуже добре прийнятий на ринку, навіть знизивши результати продажів більш дорогої моделі 911. Назва Cayman, всупереч зовнішнім виглядом, не відноситься до Кайманових островів, а є альтернативним написанням назви кайман - рептилії з сімейства алігаторів. Друге покоління Porsche Cayman було випущено в 2013 році.",
-        "footer": "Всі права захищено. 2023 - 2024"
+        "footer": "Всі права захищено. Всі зображення відповідають ліцензії Creative Commons. 2023 - 2024",
+        "contactButton": "Надіслати",
+        "textEnter": "Напишіть нам повідомлення",
+        "surname": "Прізвище",
+        "name": "Ім'я"
     },
 
     "en": {
-        "about": "About Us",
         "contact": "Contact",
         "main": "Main page",
         "boxster.title": "Porsche Boxster",
@@ -41,11 +43,14 @@ const translations = {
         "cayman.title": "Porsche Cayman",
         "cayman.description": "The exceptional Porsche Cayman is the epitome of driving passion and incredible design. This sporty coupe embodies the splendor of Porsche innovation and technology, ensuring maximum pleasure with every kilometer. The powerful engine, precise handling and refined interior emphasize the status of the owner. Experience true driving pleasure with the Cayman - a harmony of style and performance created for true car enthusiasts.",
         "cayman.extended.description": "Produced since 2005, a two-seat coupe-bodied sports car (G segment). In the catalog of the German brand Porsche Cayman replaced the 968 model, while being closely related to the Boxster model, of which it is actually a two-door version. On the other hand, stylistically, the car refers to the Porsche classics - the 550 Coupe and 904 Coupe models. Porsche Cayman on the market was well received, which even made the sales results of the more costly 911 model lower. The name Cayman does not, contrary to appearances, refer to the Cayman Islands, but is an alternative notation of the name caiman - a reptile from the alligator family. The second-generation Porsche Cayman was launched in 2013.",
-        "footer": "All rights reserved. 2023 - 2024"
+        "footer": "All rights reserved. All images are licensed under a Creative Commons license. 2023 - 2024",
+        "contactButton": "Submit",
+        "textEnter": "Enter your message",
+        "surname": "Last name",
+        "name": "First name"
     },
 
     "pl":{
-        "about": "O nas",
         "contact": "Kontakt",
         "main": "Strona główna",
         "boxster.title": "Porsche Boxster",
@@ -63,6 +68,10 @@ const translations = {
         "cayman.title": "Porsche Cayman",
         "cayman.description": "Wyjątkowy Porsche Cayman to uosobienie pasji do jazdy i niesamowitego designu. To sportowe coupé uosabia splendor innowacji i technologii Porsche, zapewniając maksymalną przyjemność z każdego kilometra. Mocny silnik, precyzyjne prowadzenie i wyrafinowane wnętrze podkreślają status właściciela. Doświadcz prawdziwej przyjemności z jazdy Caymanem - harmonii stylu i osiągów stworzonej dla prawdziwych entuzjastów motoryzacji.",
         "cayman.extended.description": "Produkowany od roku 2005, dwuosobowy samochód sportowy o nadwoziu coupe (segment G). W katalogu niemieckiej marki Porsche Cayman zastąpił model 968, będąc jednocześnie blisko powiązany z modelem Boxster, którego właściwie jest dwudrzwiową wersją. Natomiast pod względem stylistycznym auto odwołuje się do klasyki Porsche – modeli 550 Coupe oraz 904 Coupe. Porsche Cayman na rynku został doskonale przyjęty, co sprawiło nawet obniżenie wyników sprzedaży bardziej kosztownego modelu 911. Nazwa Cayman nie nawiązuje wbrew pozorom do wysp Kajmanów (Cayman Islands), lecz jest alternatywnym zapisem miana kajman (caiman) – gada z rodziny aligatorów. Drugą generację Porsche Caymana wprowadzono na rynek w roku 2013.",
-        "footer": "Wszelkie prawa zastrzeżone. 2023 - 2024"
+        "footer": "Wszelkie prawa zastrzeżone. Wszystkie obrazy są dostępne na licencji Creative Commons. 2023 - 2024",
+        "contactButton": "Prześlij",
+        "textEnter": "Wpisz swoją wiadomość",
+        "surname": "Nazwisko",
+        "name": "Imie"
     }
 };

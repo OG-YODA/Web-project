@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="scripts/script.js"></script>
     <script src="scripts/translations.js"></script>
+    <script src="scripts/boxsterCarousel.js"></script>
 </head>
 <body>
 
@@ -23,31 +24,33 @@
                 </div>
             </div>
 
+            <div class="logo">PORSCHE</div>
+
             <nav class="nav-menu">
                 <ul>
                     <li><a href="index.html" data-translate="main">Main page</a></li>
-                    <li><a href="about.html" data-translate="about">About</a></li>
                     <li><a href="contact.html" data-translate="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-
+    <div class="car-container">
+        <h2 data-translate="boxster.title">Porsche Boxster</h2>
+        <div class="carousel">
+            <img id="current-image" alt="Car Image">
+            <div class="arrow left" onclick="changeImage(-1)">&#9664;</div>
+            <div class="arrow right" onclick="changeImage(1)">&#9654;</div>
+        </div>
+        <div class="text">
+            <p data-translate="boxster.extended.description">
+                The Porsche Boxster is a sports roadster (G or H segment) produced since 1996. In Porsche's range, it is the cheapest and smallest car, replacing the 968 model. Unlike its predecessor, the Boxster's engine is centrally located. In terms of styling, the Porsche Boxster is reminiscent of the former Spyder model. The car has won many awards and is one of the German brand's best-selling cars in history. The model's name is a compound of the words "boxer" and "roadster." The car was modernized in 2003, and then (two years later) the 986 model was replaced by the 987 model. The third generation of the Porsche Boxster (981) was launched in 2012.
+            </p>
+        </div>
+    </div>
 
     <div class="footer">
-        <p data-translate="footer">All rights reserved. 2023 - 2024</p>
+        <p data-translate="footer">All rights reserved. All images are licensed under a Creative Commons license. 2023 - 2024</p>
     </div>
-    <script>
-        // Set the selected language from URL parameter on page load
-        document.addEventListener('DOMContentLoaded', function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            const selectedLanguage = urlParams.get('lang');
-
-            if (selectedLanguage) {
-                translatePage(selectedLanguage);
-            }
-        });
-    </script>
 </body>
 </html>
